@@ -6,9 +6,10 @@ from asteroid import *
 from asteroidfield import AsteroidField
 from shot import Shot
 
+
 def main():
     print("Starting Asteroids!")
-    print(f"Screen width: {SCREEN_WIDTH}") 
+    print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
 
     pygame.init()
@@ -42,7 +43,6 @@ def main():
         screen.fill(color="black")
 
         for obj in updatable:
-
             obj.update(dt)
         for obj in drawable:
             obj.draw(screen)
